@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="Style1.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+</head>
+
+<body> 
+<div class="header">
+    <div class="header img">
+      <img src="logo.jpg" alt="logo">
+      <div class="header-right">
+       <a href="signup.html">Sign Up</a>
+	   <a href="login.html">Log In</a>
+        <!-- CART ICON  -->
+            <i class='bx bx-shopping-bag' id="cart-icon" style=" font-size:40px"></i>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">RM0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+      </div>
+      </div>
+    </div>
+ 
+<div class="navigations">
+    <ul>
+    <li><a href="Homepage.html">Home</a></li>
+    <li class="dropdownn">
+      <a class="dropbtn">Categories</a>
+      <div class="dropdown-content">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+		<a href="kids.html">Kids</a>
+      </div>
+    </li> 
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+<div class='parent'>
+  <div class='child1'>
+    <center><h5>Outfit Ideas</h5></center>
+    <div class="carousel1">
+        <div id="slideshow-child1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500">
+            <!-- Slideshow images -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="idea1.jpg" alt="Idea 1" class="slideshow-img">
+                </div>
+                <div class="carousel-item">
+                    <img src="idea2.jpg" alt="Idea 2" class="slideshow-img">
+                </div>
+				<div class="carousel-item">
+                    <img src="idea3.jpg" alt="Idea 2" class="slideshow-img">
+                </div>
+				<div class="carousel-item">
+                    <img src="idea4.jpg" alt="Idea 2" class="slideshow-img">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  <div class='child2'>
+  <div class="carousel-content">
+      
+      <div class="carousel">
+		<div id="slideshow" class="carousel slide carousel-fade" data-ride="carousel"data-interval="3000">
+			  <!-- Slideshow images -->
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img src="man_1.jpg" alt="Image 1" class="slideshow-img">
+				</div>
+				<div class="carousel-item">
+				  <img src="man_2.jpg" alt="Image 2" class="slideshow-img">
+				</div>
+				<div class="carousel-item">
+				  <img src="woman_1.jpg" alt="Image 3" class="slideshow-img">
+				</div>
+				<div class="carousel-item">
+				  <img src="woman_2.jpg" alt="Image 4" class="slideshow-img">
+				</div>
+			  </div>
+		</div>
+	  </div>
+    <div class="content">
+    <center>
+      <h5>Discover the art of style at PAW GET Store.</h5>
+      <h5>
+        Unlock your style potential at PAW GET STORE.
+        Immerse yourself in fashion-forward collections, designed to empower your individuality.
+        Elevate your look, redefine your style – shop with us today!
+      </h5>
+      <button id="toggleButton" onclick="redirectToSignUp()"style="background-color: brown;color:white;">Sign Up Now!</button>
+    </center>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script>
+    $(document).ready(function () {
+        function switchSlides(slideshowId) {
+            var activeSlide = $("#" + slideshowId + " .carousel-item.active");
+
+            // Move the active slide upward
+            activeSlide.find(".slideshow-img").addClass("move-up");
+
+            // After the transition is complete, remove the move-up class
+            setTimeout(function () {
+                activeSlide.find(".slideshow-img").removeClass("move-up");
+            }, 500);
+
+            // After a short delay, set the next slide as active
+            setTimeout(function () {
+                activeSlide.removeClass("active");
+
+                // Move to the next slide or start over if it's the last one
+                var nextSlide = activeSlide.next(".carousel-item").length ? activeSlide.next(".carousel-item") : $("#" + slideshowId + " .carousel-item:first-child");
+                nextSlide.addClass("active");
+            }, 1000); // Adjust the duration to match the total transition time
+        }
+
+        // Set the first slide as active initially for the new carousel
+        switchSlides("slideshow-child1");
+
+        // Change the active slide every 3 seconds (adjust the duration as needed)
+        setInterval(function () {
+            switchSlides("slideshow-child1");
+        }, 3000);
+
+        // Arrow navigation
+        $("#slideshow-child1").on("click", ".carousel-control-prev", function () {
+            var activeSlide = $("#slideshow-child1 .carousel-item.active");
+            activeSlide.find(".slideshow-img").removeClass("move-up");
+
+            // Move to the previous slide or go to the last one if it's the first slide
+            var prevSlide = activeSlide.prev(".carousel-item").length ? activeSlide.prev(".carousel-item") : $("#slideshow-child1 .carousel-item:last-child");
+            prevSlide.addClass("active");
+        });
+
+        $("#slideshow-child1").on("click", ".carousel-control-next", function () {
+            var activeSlide = $("#slideshow-child1 .carousel-item.active");
+            activeSlide.find(".slideshow-img").removeClass("move-up");
+
+            // Move to the next slide or go to the first one if it's the last slide
+            var nextSlide = activeSlide.next(".carousel-item").length ? activeSlide.next(".carousel-item") : $("#slideshow-child1 .carousel-item:first-child");
+            nextSlide.addClass("active");
+        });
+    });
+	
+function redirectToSignUp() {
+      window.location.href = 'signup.html'; // Replace 'sign-up.html' with your actual sign-up page URL
+    }
+
+</script>
+<!-- link js  -->
+    <script src="js/cart.js"></script>
+<div class="footer">
+          <p>PAW GET Clothing Brand — © 2024, LLC All Rights Reserved.</p>
+ </div>
+</body>
+</html>

@@ -1,0 +1,642 @@
+* {box-sizing: border-box;}
+
+  
+  .bg-img {
+                background-image: url("bg3.jpg");
+                min-height: 300px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                position: relative;
+				
+            }
+
+           .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    padding: 20px;
+	color:#321414;
+	background-color: white;
+}
+
+
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background:#ffe4cd ;
+            }
+
+            input[type=text], input[type=password] {
+                background-color: #faf0e6;
+                outline: none;
+            }
+
+            .btn {
+                background-color: maroon;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+
+            .btn:hover {
+                opacity: 1;
+            }
+			* {box-sizing: border-box;}
+
+/*Navigation*/
+
+
+ul {
+  font-family: "Times New Roman", Times, serif; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ab4e52;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 20000px;
+  position: relative;
+  margin: auto;
+  padding-top :8px;
+  width:150%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto; 
+  max-height: 500px; 
+  aspect-ratio: 1020 / 1350;
+  object-fit: cover;
+  z-index:1;
+ 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+.bg{
+	background-color:#F9E79F;
+}
+/*----jangan kacau-----/*
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* Variables  */
+:root{
+    --main-color: #ff2301;
+    --sec-color: #6492e8;
+    --text-color: rgb(5, 5, 5);
+    --bg-color: rgb(255, 255, 255);
+}
+::selection{
+    color: var(--text-color);
+    background-color: black;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+section{
+    padding: 4rem 0 3rem;
+}
+body{
+    color: var(--text-color);
+}
+img{
+    width: 100%;
+}
+  
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    
+}
+/* Additional CSS for Home Link */
+.nav-link a {
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #783b31;
+    text-decoration: none;
+    margin-right: 10px; /* Adjust margin as needed */
+    transition: all 0.3s ease-in; /* Smooth color transition on hover */
+}
+
+.nav-link a:hover {
+    color: #c98d83; /* Change color on hover */
+    border-top:0.1rem solid black;
+    border-bottom: 0.1rem solid black;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:#783b31;
+    text-transform: uppercase;
+}
+
+.logoContent{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.logoContent .logo img{
+    height: 2rem;
+    width: 2rem;
+}
+
+#cart-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media (max-width: 768px) {
+    
+    .nav-link {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
+        transition: 1.5s;
+        z-index: 99;
+        
+    }
+
+    .nav-link.active {
+        display: flex;
+    }
+
+    .nav-link a {
+        margin-right: 0;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}
+
+
+/* SHOP SECTION  */
+.shop{
+    margin-top: 2rem;
+}
+.section-title{
+    font-style: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+	padding-bottom: 50px;
+	background-color:#F7E7CE;
+	 border-top: 5px solid white;
+}
+.product-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+	padding : 40px;
+}
+
+.product-box:hover{
+    padding: 8px;
+    border: 1px solid pink;
+    transition: .4s;
+	background-color: #F9E79F; 
+}
+
+.product-img{
+    width:100%;
+	height:100%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+	margin-top: auto;
+
+
+}
+.product-price{
+    margin-top: auto;
+    font-weight: 600;
+}
+
+.caption{
+    margin-bottom: .5rem;
+    font-size: 13px;
+
+}
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background-color: hsl(249, 32%, 17%);
+}
+
+.navigation {
+  background-color: #2E4A70;
+  color: #fff; 
+}
+
+.navigation ul {
+  list-style: none; 
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+
+.navigation li {
+  margin-right: 10px;
+  
+}
+
+.navigation li a, .dropbtn {
+  color: #FFF9F0;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+
+}
+
+li.dropdownn {
+  display: inline-block;
+}
+
+.dropdown-content {
+  color:black;
+  display: none;
+  position: absolute;
+  background-color: #2E4A70; /*warna bg bila hover*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color:black;
+}
+
+.dropdownn:hover .dropdown-content {
+  display: block;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.navigation a:hover {
+    color: black; /* color when hover to the nav*/
+}
+
+/* CART  */
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -100%; 
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
+    border: 1px solid var(--main-color);
+    transition: 1.5s;
+	z-index:1000; 
+}
+.cart.active{
+    right: 0;
+    transition: .5s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: .5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.total-title{
+    font-weight: 600px;
+}
+.total-price{
+	font-weight: 600px;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--sec-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background-color: var(--text-color);
+}
+#cart-close{
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+
